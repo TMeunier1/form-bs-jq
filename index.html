@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulaire Interactif</title>
+    <link rel="stylesheet" href="static/external/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <form class="form-horizontal" id="formulaire">
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="pseudoinput">Pseudonyme :</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" name="pseudoinput">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="col-sm-2 control-label">Mot de passe :</label>
+                                <div class="col-sm-8">
+                                    <input type="password" class="form-control pw" id="password" name="password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm" class="col-sm-2 control-label">Répétez mot de passe :</label>
+                                <div class="col-sm-8">
+                                    <input type="password" name="confirm" class="form-control pw" id="confirm">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="mail" class="col-sm-2 control-label">Adresse e-mail :</label>
+                                <div class="col-sm-8">
+                                    <input type="text" name="email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-8">
+                                    <button id="send" type="submit" class="btn btn-default">Envoyer</button>
+                                    <button id="clear" type="reset" class="btn btn-default">Vider champs</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="static/external/jquery/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="static/external/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="static/js/script.js" charset="utf-8"></script>
+</body>
+
+</html>
